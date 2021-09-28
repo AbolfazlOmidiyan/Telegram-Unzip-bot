@@ -1,0 +1,42 @@
+{
+  "name": "Unzip and Unrar Bot",
+  "description": "Telegram bot to unzip and Unrar files.",
+  "logo": "https://telegra.ph/file/4dbd4680a4f794fce88ce.jpg",
+  "keywords": [
+    "telegram",
+    "bot",
+    "python",
+    "pyrogram"
+  ],
+  "repository": "https://github.com/AbolfazlOmidiyan",
+  "website": "https://telegram.dog/pishro_hack",
+  "success_url": "www.mysteryxd.ml",
+  "env": {
+    "API_ID": {
+      "description": "Get this value from my.telegram.org or @TgOrgBot"
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org or @TgOrgBot"
+    },
+    "BOT_TOKEN": {
+      "description": "Obtain a Telegram bot token by contacting @BotFather"
+    },
+    "OWNER_ID": {
+      "description": "Get your id by sending /id to @MissMiley_bot. Fill only if you filled OWNER_NAME.", 
+      "required": false
+    }, 
+    "OWNER_NAME": {
+      "description": "Your name .Fill only if you filled OWNER_ID.", 
+      "required": false
+    }
+  },
+  "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
